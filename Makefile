@@ -28,6 +28,7 @@ package:
 
 deps:
 	go get github.com/mitchellh/gox
+	go get github.com/mitchellh/packer
 	go get golang.org/x/tools/cmd/stringer
 	go get github.com/kardianos/govendor
 	govendor sync
@@ -69,6 +70,7 @@ testrace: deps ## Test for race conditions
 
 updatedeps:
 	go get -u github.com/mitchellh/gox
+	go get -u github.com/mitchellh/packer
 	go get -u golang.org/x/tools/cmd/stringer
 	@echo "INFO: Packer deps are managed by govendor. See CONTRIBUTING.md"
 
